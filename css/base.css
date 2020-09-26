@@ -277,6 +277,13 @@ main {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 50vh;
+  text-align: left;
   text-align: center;
   position: relative;
   z-index: 100;
@@ -327,9 +334,9 @@ main {
   color: var(--color-tagline);
   margin: 1rem 0 0 0;
   font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 0.25rem;
-  word-spacing: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.25vw;
+  word-spacing: 0.5vw;
   text-transform: uppercase;
   text-align: center;
   z-index: 199;
@@ -523,6 +530,17 @@ main {
     min-height: 100vh;
     text-align: left;
   }
+  .content__tagline {
+  color: var(--color-tagline);
+  margin: 1rem 0 0 0;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  word-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 199;
+}
   .frame {
     position: fixed;
     z-index: 199;
