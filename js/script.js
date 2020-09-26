@@ -1,13 +1,3 @@
-/**
- * demo.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2018, Codrops
- * http://www.codrops.com
- */
 {
   // Class Menu.
   class Menu {
@@ -159,7 +149,7 @@
         action === "open" ? 0.05 : -0.05
       );
 
-      // The "Learn how to participate" menu link.
+      // The "We'd love to hear from you" menu link.
       TweenMax.to(this.DOM.menulink, action === "open" ? 0.9 : 0.6, {
         ease: action === "open" ? Quint.easeOut : Quart.easeInOut,
         startAt: action === "open" ? { x: "10%" } : null,
@@ -206,7 +196,7 @@
     constructor() {
       this.DOM = { main: document.querySelector(".background") };
       // Number of layers (how many repeated image elements)
-      this.layersTotal = 4;
+      this.layersTotal = 2;
       this.layout();
       this.initEvents();
     }
